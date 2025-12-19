@@ -573,7 +573,7 @@ elif aba == "Redação: Comparativos entre Escolas e Regionais":
             name="Participação da escola",
             text=[f"{v:.2f}%" if pd.notna(v) else "" for v in part],
             textposition="top center",
-            marker=dict(color="#1f77b4"),  # azul
+            marker=dict(color="#2ca02c"),  # verde
             line=dict(color="#1f77b4"),
             hovertemplate="Etapa: %{x}<br>Participação da escola: %{text}<extra></extra>",
         )
@@ -938,7 +938,7 @@ elif aba == "Objetivas: Comparativos entre Escolas e Regionais":
             name="Participação da escola",
             text=[f"{v:.2f}%" if pd.notna(v) else "" for v in part_obj],
             textposition="top center",
-            marker=dict(color="#1f77b4"),  # azul
+            marker=dict(color="#2ca02c"),  # verde
             line=dict(color="#1f77b4"),
             hovertemplate="Etapa: %{x}<br>Participação da escola: %{text}<extra></extra>",
         )
