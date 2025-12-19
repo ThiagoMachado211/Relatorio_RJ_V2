@@ -545,7 +545,7 @@ elif aba == "Redação: Comparativos entre Escolas e Regionais":
 
     fig_medias.update_layout(
         title=dict(
-            text=f"Comparativo de Médias (Redação): {escola_escolhida} vs {regional_escolhida}",
+            text=f"Redação - Médias - {escola_escolhida}",
             font=dict(size=24)
         ),
         font=dict(size=16),
@@ -574,7 +574,7 @@ elif aba == "Redação: Comparativos entre Escolas e Regionais":
             text=[f"{v:.2f}%" if pd.notna(v) else "" for v in part],
             textposition="top center",
             marker=dict(color="#2ca02c"),  # verde
-            line=dict(color="#1f77b4"),
+            line=dict(color="#2ca02c"),
             hovertemplate="Etapa: %{x}<br>Participação da escola: %{text}<extra></extra>",
         )
     )
@@ -596,7 +596,7 @@ elif aba == "Redação: Comparativos entre Escolas e Regionais":
 
     fig_part.update_layout(
         title=dict(
-            text=f"Comparativo de Participação (Redação): {escola_escolhida} vs {regional_escolhida}",
+            text=f"Redação - Participações - {escola_escolhida}",
             font=dict(size=24)
         ),
         font=dict(size=16),
@@ -910,7 +910,7 @@ elif aba == "Objetivas: Comparativos entre Escolas e Regionais":
 
     fig_acertos.update_layout(
         title=dict(
-            text=f"Comparativo de Acertos (Objetivas): {escola_escolhida} vs {regional_escolhida}",
+            text=f"Provas Objetivas - Níveis de Acertos - {escola_escolhida}",
             font=dict(size=24)
         ),
         font=dict(size=16),
@@ -939,7 +939,7 @@ elif aba == "Objetivas: Comparativos entre Escolas e Regionais":
             text=[f"{v:.2f}%" if pd.notna(v) else "" for v in part_obj],
             textposition="top center",
             marker=dict(color="#2ca02c"),  # verde
-            line=dict(color="#1f77b4"),
+            line=dict(color="#2ca02c"),
             hovertemplate="Etapa: %{x}<br>Participação da escola: %{text}<extra></extra>",
         )
     )
@@ -961,7 +961,7 @@ elif aba == "Objetivas: Comparativos entre Escolas e Regionais":
 
     fig_part.update_layout(
         title=dict(
-            text=f"Comparativo de Participação (Objetivas): {escola_escolhida} vs {regional_escolhida}",
+            text=f"Provas Objetivas - Participação - {escola_escolhida}",
             font=dict(size=24)
         ),
         font=dict(size=16),
