@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 # ===============================================================
 # Constantes de colunas
 # ===============================================================
-# COL_CODIGO   = "Código Interno"
+COL_CODIGO   = "Código Interno"
 COL_REGIONAL = "Regional"
 COL_ESCOLA   = "Escola"
 
@@ -449,7 +449,7 @@ if aba == "Redação: Médias e Participações por Escola":
 
     # Tabela da regional (Redação)
     st.subheader("Participações e notas de redação da regional selecionada")
-    cols_tabela = [COL_ESCOLA] + COL_PART_RED + COL_NOTAS_RED
+    cols_tabela = COL_ESCOLA + COL_PART_RED + COL_NOTAS_RED
     df_tabela = df_reg_red[cols_tabela].copy()
 
     # 1) converter para número
