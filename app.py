@@ -449,7 +449,7 @@ if aba == "Redação: Médias e Participações por Escola":
 
     # Tabela da regional (Redação)
     st.subheader("Participações e notas de redação da regional selecionada")
-    cols_tabela = [COL_CODIGO, COL_ESCOLA] + COL_PART_RED + COL_NOTAS_RED
+    cols_tabela = [COL_ESCOLA] + COL_PART_RED + COL_NOTAS_RED
     df_tabela = df_reg_red[cols_tabela].copy()
 
     # 1) converter para número
@@ -692,7 +692,7 @@ elif aba == "Redação: Comparativos entre Escolas e Regionais":
 
     # Tabela da regional (Redação)
     st.subheader("Participações e notas de redação da regional selecionada")
-    cols_tabela = [COL_CODIGO, COL_ESCOLA] + COL_PART_RED + COL_NOTAS_RED
+    cols_tabela = [COL_ESCOLA] + COL_PART_RED + COL_NOTAS_RED
     df_tabela = df_reg_red[cols_tabela].copy()
 
     for c in COL_PART_RED:
@@ -846,7 +846,7 @@ elif aba == "Objetivas: Médias e Participações por Escola":
 
     # Tabela da regional (Objetivas)
     st.subheader("Participações e acertos (provas objetivas) da regional selecionada")
-    cols_tabela = [COL_CODIGO, COL_ESCOLA] + COL_PART_OBJ + COL_ACERTOS_OBJ
+    cols_tabela = [COL_ESCOLA] + COL_PART_OBJ + COL_ACERTOS_OBJ
     df_tabela = df_reg_obj[cols_tabela].copy()
 
     for c in COL_PART_OBJ:
@@ -1075,7 +1075,7 @@ elif aba == "Objetivas: Comparativos entre Escolas e Regionais":
 
     # Tabela da regional (Objetivas)
     st.subheader("Participações e acertos (provas objetivas) da regional selecionada")
-    cols_tabela = [COL_CODIGO, COL_ESCOLA] + COL_PART_OBJ + COL_ACERTOS_OBJ
+    cols_tabela = [COL_ESCOLA] + COL_PART_OBJ + COL_ACERTOS_OBJ
     df_tabela = df_reg_obj[cols_tabela].copy()
 
     for c in COL_PART_OBJ:
