@@ -12,7 +12,6 @@ st.set_page_config(layout="wide")
 # ===============================================================
 # Constantes de colunas
 # ===============================================================
-COL_CODIGO   = "Código Interno"
 COL_REGIONAL = "Regional"
 COL_ESCOLA   = "Escola"
 
